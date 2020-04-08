@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useReducer} from 'react';
+import {StateProvider} from "./context";
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <StateProvider>
+      <h1>Hello World</h1>
+      </StateProvider>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+// import React, {useReducer} from 'react';
+// import {StateProvider} from "./context";
+
+
+
+// function App() {
+
+//   const initialState = {
+
+//     name: "Dustin"
+
+//   };
+
+
+//   const reducer = {state, action} => {
+//     switch (action.type) {
+
+//       default: 
+//        return state;
+//     }
+//   }
+
+//   return (
+//     <div className="App">
+//       <StateProvider value={useReducer(reducer, initialState)}>
+//       <h1>Hello World</h1>
+//       </StateProvider>
+//     </div>
+//   );
+// }
+
+// export default App;
