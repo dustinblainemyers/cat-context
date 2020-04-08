@@ -17,7 +17,7 @@ const DemoComponent = () => {
       <p>Hi, my name is {name}</p>
       <form>
         <input
-          type="text"
+          type="text" 
           name="newName"
           placeholder="New Name"
           onChange={(e) => handleChange(e, dispatch)}
